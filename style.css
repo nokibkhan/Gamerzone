@@ -14,6 +14,7 @@ body{
       font-family: 'Open Sans', sans-serif;
      font-family: 'Work Sans', sans-serif;
 }
+/* navbar start*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -57,7 +58,131 @@ ul li a{
 }
 
 
-@media screen and (max-width: 1100px) {
+/* navbar end*/
+
+
+/* header start*/
+
+
+header{
+   
+}
+.header-inner{
+display: flex;
+justify-content: space-between;
+gap: 50px;
+
+
+
+}
+.header-desc{
+    background-image: url(images/Group\ 14.png);
+    width: 50%;
+ background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 50px;
+    padding-left: 180px;
+    padding-top: 150px;
+}
+
+.header-desc h3{
+   font-size: 48px;
+    font-weight: 700;
+  text-transform: uppercase;
+}
+.header-desc h1{
+    font-size: 72px;
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+
+.header-list{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.header-list img{
+    margin-right: 10px;
+
+}
+
+.header-image img{
+    width: 100%;
+    padding-right: 180px;
+}
+.btndiv{
+    display: flex;
+    color: white;
+    margin-top: 25px;
+}
+.btndiv .btn1{
+background-color: #ff42a5;
+color: white;
+padding: 12px 25px;
+border-radius: 25px;
+outline: none;
+border: none;
+cursor: pointer;
+margin-right: 10px;
+}
+.btndiv .btn2{
+    background-color: #4ec5f7;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    }
+/* header end*/
+
+
+/* We are gamer section start*/
+.gamer-inner{
+    width: 100%;
+padding: 0px 180px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.gamer-inner button{
+    background-color: #ff42a5;
+color: white;
+padding: 12px 25px;
+border-radius: 25px;
+outline: none;
+border: none;
+cursor: pointer;
+margin: 20px 0px;
+
+}
+.gamer-inner-images img{
+    width: 100%;
+}
+.gamer-inner-desc p{
+
+color:#534C64;
+}
+.gamer-inner-desc{
+    text-align: right;
+}
+.gamer-inner-desc h2{
+    font-size: 48px;
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+
+}
+/* We are gamer section end*/
+
+
+
+@media screen and (max-width: 1200px) {
     .logo img{
         width: 100px;
     }
@@ -74,4 +199,201 @@ ul li a{
     justify-content: center;
     flex-wrap: wrap;
    }
+   .header-inner{
+    flex-direction: column;
+    flex-direction: column-reverse;
+      }
+      header{
+           
+        padding: 50px 50px;
+    }
+   
+   .gamer-inner{
+    width: 100%;
+padding: 0px 50px;
+flex-direction: column;
+}
+.gamer-inner-desc{
+    width: 100%;
+   text-align: center;
+}
+
   }
+
+
+  
+@media screen and (max-width: 1500px) {
+    .header-image img{
+        width: 100%;
+        text-align: center;
+    }
+    
+header{
+    padding: 50px 0px;
+}
+.header-inner{
+    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.header-image img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.gamer-inner{
+    width: 100%;
+padding: 0px 50px;
+}
+.header-desc {
+    background-image: url(images/Group\ 14.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+}
+.header-list{
+ 
+}
+
+.header-image img{
+    width: 100%;
+    padding-right: 0px;
+    padding: 10px 25px;
+}
+    }
+
+
+
+
+.funny-inner{
+    padding: 0px 180px;
+    display: flex;
+ flex-wrap: wrap;
+}
+.funny-inner .main-img{
+    width: 100%;
+     position: relative;
+
+}
+
+
+.funny-image-text p{
+    padding: 0px 25px;   
+}
+
+.funny-item{
+   width: 300px;
+   padding: 0px 20px; 
+   margin: 0 auto;
+   height: 400px;
+   margin-top: 50px;
+}
+.funny-btn{
+  position: relative;
+    top: -250px;
+    left: 100px;
+    display: none;
+   cursor: pointer;
+   transition: all 1s ease;
+   
+}
+.funny-item:hover .funny-btn {
+   display: block;
+}
+.funny-btn img{
+    width: 50px
+}
+.funny-btn p{
+    color: #ff42a5;
+    padding: 0px 0px; 
+    margin-left:-18px;
+    font-weight: bold;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    height: 305px;
+    cursor: pointer;
+    
+  }
+  
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    border-radius: 12px;
+  
+  }
+  
+  .image-container:hover::before {
+    opacity: 0.5;
+  }
+  
+  .image-container img {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 992px) { 
+        .header-inner{
+          flex-direction: column;
+          flex-direction: column-reverse;
+            }
+            header{
+ 
+                width: 100%;
+                padding: 0px 0px;
+            }
+            .header-desc {
+                width: 100%;
+            }
+            .header-desc{
+                
+                
+            }
+            .header-image img{
+                width: 100%;
+                text-align: center;
+            }
+            .funny-inner{
+                padding: 0px 20px;
+                display: flex;
+             flex-wrap: wrap;
+            }
+        
+    }
+
+    @media screen and (max-width: 768px) {
+  ul{
+    flex-direction: column;
+  }
+    }
