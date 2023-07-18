@@ -180,7 +180,120 @@ color:#534C64;
 }
 /* We are gamer section end*/
 
+.inner-download{
+    display: flex;
+    justify-content: center;
+    padding: 50px 180px;
+    align-items: center;
+    gap: 150px;
+}
+.download-desc{
+    width: 300px;
+}
 
+.download-img{
+    position: relative;
+}
+.support-img-download{
+    width: 250px!important;
+}
+.support-img-download{
+  position: absolute;
+  top: 500px;
+  margin-left: -150px;
+    
+ 
+}
+
+    .funny-inner{
+        padding: 0px 180px;
+        display: flex;
+     flex-wrap: wrap;
+    }
+    .funny-inner .main-img{
+        width: 100%;
+         position: relative;
+    
+    }
+    
+    .funny-image-text p{
+        padding: 0px 25px;   
+    }
+    
+    .funny-item{
+       width: 300px;
+       padding: 0px 20px; 
+       margin: 0 auto;
+       height: 400px;
+       margin-top: 50px;
+    }
+    .funny-btn{
+      position: relative;
+        top: -250px;
+        left: 100px;
+        display: none;
+       cursor: pointer;
+       transition: all 1s ease;
+       
+    }
+    .funny-item:hover .funny-btn {
+       display: block;
+    }
+    .funny-btn img{
+        width: 50px
+    }
+    .funny-btn p{
+        color: #ff42a5;
+        padding: 0px 0px; 
+        margin-left:-18px;
+        font-weight: bold;
+    }
+    
+    
+    .image-container {
+        position: relative;
+        display: inline-block;
+        height: 305px;
+        cursor: pointer;
+        
+      }
+      
+      .image-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+        border-radius: 12px;
+      
+      }
+      
+      .image-container:hover::before {
+        opacity: 0.5;
+      }
+      
+      .image-container img {
+        display: block;
+      }
+      
+    
+    
+.funny h2{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+}    
+.funny span{
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width: 1200px) {
     .logo img{
@@ -265,102 +378,6 @@ padding: 0px 50px;
     padding: 10px 25px;
 }
     }
-
-
-
-
-.funny-inner{
-    padding: 0px 180px;
-    display: flex;
- flex-wrap: wrap;
-}
-.funny-inner .main-img{
-    width: 100%;
-     position: relative;
-
-}
-
-
-.funny-image-text p{
-    padding: 0px 25px;   
-}
-
-.funny-item{
-   width: 300px;
-   padding: 0px 20px; 
-   margin: 0 auto;
-   height: 400px;
-   margin-top: 50px;
-}
-.funny-btn{
-  position: relative;
-    top: -250px;
-    left: 100px;
-    display: none;
-   cursor: pointer;
-   transition: all 1s ease;
-   
-}
-.funny-item:hover .funny-btn {
-   display: block;
-}
-.funny-btn img{
-    width: 50px
-}
-.funny-btn p{
-    color: #ff42a5;
-    padding: 0px 0px; 
-    margin-left:-18px;
-    font-weight: bold;
-}
-
-
-.image-container {
-    position: relative;
-    display: inline-block;
-    height: 305px;
-    cursor: pointer;
-    
-  }
-  
-  .image-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-    border-radius: 12px;
-  
-  }
-  
-  .image-container:hover::before {
-    opacity: 0.5;
-  }
-  
-  .image-container img {
-    display: block;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     @media screen and (max-width: 992px) { 
