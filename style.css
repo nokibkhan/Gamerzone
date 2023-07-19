@@ -403,12 +403,16 @@ color: #534C64;
     margin: 10px 5px;
     border-radius: 25px;
     position: relative;
+    border: 1px solid transparent;
+    padding: 5px 10px;
 }
 .ads-item h6{
     padding-left: 10px;
 }
 .ads-item:hover{
     border: 1px solid #ff42a5;
+    
+
 }
 .footer-inner{
     text-align: center;
@@ -550,6 +554,7 @@ padding: 0px 50px;
         flex-direction: column;
         flex-direction: column-reverse;
         justify-content: center;
+        margin: auto;
     }
     .header-image img{
         width: 100%;
@@ -565,7 +570,11 @@ padding: 0px 50px;
 
  
 
-
+    .header-image img {
+        width: 100%;
+        padding-right: 0px;
+        padding: 10px 150px;
+    }
 
         
 }
@@ -609,6 +618,11 @@ padding: 0px 50px;
         .ads-top{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+        }
+        .header-image img {
+            width: 100%;
+            padding-right: 0px;
+            padding: 10px 50px;
         }
     }
 
